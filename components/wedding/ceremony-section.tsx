@@ -11,22 +11,48 @@ export function CeremonySection() {
         <BlossomSprig className="absolute -left-3 -top-3 size-20 md:size-28" />
         <BlossomSprig className="absolute -right-3 -top-3 size-20 md:size-28" flip/>
 
-        <Eyebrow className="text-[#8A6B2F]">The Wedding Ceremony</Eyebrow>
         <h2 id="ceremony-title" className="mt-3 text-5xl font-medium text-forest md:text-7xl">
           Anand Karaj
         </h2>
         <GoldDivider className="mx-auto mt-5" />
 
-        <p className="mx-auto mt-8 max-w-xl text-pretty text-lg leading-relaxed md:text-xl">
-          Together with the families, we invite you to celebrate the Anand Karaj of
-        </p>
-        <p className="mt-6 font-script text-5xl leading-tight text-forest md:text-6xl">{wedding.groom}</p>
-        <p className="my-1 text-xl italic text-[#8A6B2F]">with</p>
-        <p className="font-script text-5xl leading-tight text-forest md:text-6xl">{wedding.bride}</p>
+                {/* Family blessings */}
+        <div className="mt-8 space-y-3">
+          <p className="text-sm uppercase tracking-[0.3em] text-[#8A6B2F]">
+            With the blessings of
+          </p>
 
-        <p className="mt-8 text-lg font-semibold tracking-[0.12em] text-burgundy md:text-xl">
-          <time dateTime={wedding.dateISO}>{wedding.dateLong}</time>
+          <div className="space-y-2 font-serif text-lg italic leading-relaxed text-ink/85 md:text-2xl">
+            <p>Late Sdn. Sewa Kaur &amp; Late S. Jagir Singh</p>
+            <p>Sdn. Baljeet Kaur &amp; S. Avtar Singh</p>
+          </div>
+        </div>
+
+        {/* Invitation wording */}
+        <p className="mx-auto mt-8 max-w-xl font-serif text-lg italic leading-relaxed text-ink/80 md:text-2xl">
+          Invite you to celebrate the wedding of their
+          <br />
+          beloved son
         </p>
+
+        {/* Couple's names */}
+        <div className="mt-8">
+          <p className="font-script text-5xl leading-tight text-burgundy md:text-7xl">
+            {wedding.groom}
+          </p>
+
+          <p className="my-4 font-serif text-xl italic text-[#8A6B2F]">
+            with
+          </p>
+
+          <p className="font-script text-5xl leading-tight text-burgundy md:text-7xl">
+            {wedding.bride}
+          </p>
+
+          <p className="mt-5 font-serif text-base italic text-ink/75 md:text-xl">
+            (D/o Sdn. Amarjeet Kaur &amp; S. Prakash Singh)
+          </p>
+        </div>
 
         <ol className="mx-auto mt-10 flex max-w-sm flex-col gap-3" aria-label="Order of the day">
           {wedding.schedule.map((item) => (

@@ -1,6 +1,6 @@
 import { wedding } from '@/lib/wedding-data'
 import { EntranceExperience } from './entrance-experience'
-import { FloralMonogram } from './floral-monogram'
+import { MonogramMark } from './monogram-mark'
 import { IkOnkar } from './sacred-symbols'
 
 export function HeroSection() {
@@ -16,7 +16,10 @@ export function HeroSection() {
       />
 
       <header className="relative z-10 flex items-center justify-between px-4 pt-3 md:px-8 md:pt-5">
-        <FloralMonogram className="size-11 md:size-14" />
+        <MonogramMark
+          tone="gold"
+          className="size-11 md:size-14"
+        />
         <a
           href="#darbar-sahib"
           className="rounded-full px-3 py-1.5 text-sm italic text-champagne underline-offset-4 hover:underline"

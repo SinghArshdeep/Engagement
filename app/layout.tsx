@@ -41,13 +41,13 @@ export const metadata: Metadata = {
     title: 'Jasneet & Harpreet | Anand Karaj',
     description,
     type: 'website',
-    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'An illustrated Sikh Gurudwara Sahib at dusk' }],
+    images: [{ url: '/og-image1.jpg', width: 1200, height: 630, alt: 'An illustrated Sikh Gurudwara Sahib at dusk' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Jasneet & Harpreet | Anand Karaj',
     description,
-    images: ['/og-image.jpg'],
+    images: ['/og-image1.jpg'],
   },
 }
 

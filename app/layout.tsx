@@ -26,7 +26,7 @@ const gurmukhi = Noto_Sans_Gurmukhi({
 })
 
 const description =
-  'With the blessings of the Almighty, Jasneet Singh and Harpreet Kaur invite you to their Anand Karaj on Friday, 11 December 2026 at Botanix Nature Resort, Damdama Lake, Gurugram.'
+  'With the blessings of the Almighty, Jasneet Singh and Harpreet Kaur are getting married.'
 
 export const metadata: Metadata = {
   title: 'Jasneet & Harpreet | Anand Karaj',
